@@ -8,6 +8,7 @@ export default class MessageTypes {
 
   public static GQL_CONNECTION_TERMINATE = 'connection_terminate'; // Client -> Server
   public static GQL_START = 'start'; // Client -> Server
+  public static GQL_START_ACK = 'start_ack'; // Server -> Client
   public static GQL_DATA = 'data'; // Server -> Client
   public static GQL_ERROR = 'error'; // Server -> Client
   public static GQL_COMPLETE = 'complete'; // Server -> Client

@@ -666,6 +666,8 @@ export class SubscriptionClient {
         this.checkConnectionIntervalId = setInterval(this.checkConnection.bind(this), this.wsTimeout);
         break;
 
+      case MessageTypes.GQL_START_ACK: break;
+
       default:
         throw new Error('Invalid message type!');
     }
