@@ -531,6 +531,7 @@ export class SubscriptionClient {
   }
 
   private checkConnection() {
+    console.log(`WASKEEPALIVERECEIVED=${this.wasKeepAliveReceived}`);
     if (this.wasKeepAliveReceived) {
       this.wasKeepAliveReceived = false;
       return;

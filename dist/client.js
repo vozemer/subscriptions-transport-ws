@@ -422,6 +422,7 @@ var SubscriptionClient = (function () {
         this.unsentMessagesQueue = [];
     };
     SubscriptionClient.prototype.checkConnection = function () {
+        console.log("WASKEEPALIVERECEIVED=" + this.wasKeepAliveReceived);
         if (this.wasKeepAliveReceived) {
             this.wasKeepAliveReceived = false;
             return;
